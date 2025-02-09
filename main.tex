@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.0.1, 11 September 2016) written by LianTze Lim (liantze@gmail.com).
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% meine
+\newcommand{\sep}{\ \ $\cdot$\ \ }
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{A'r\^abi, Muhammad-Ali}
+\tagline{Full-Stack Software Developer / Researcher}
+\photo{2.8cm}{mecolor}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{angellandros@gmail.com}
+%   \email{angellandros@yahoo.com}
+  \phone{(+41) 77 980 15 47}
+  \phone{(+49) 176 3569 1988}
+%   \twitter{@angellandros}
+  \printinfo{\faSkype}{@angellandros}
+  \linkedin{linkedin.com/in/angellandros}
+  \github{github.com/angellandros}
+  \printinfo{\faFacebook}{facebook.com/angellandros}
+  \mailaddress{Georges-K\"ohler-Allee 73, 73-01-06-0, 79110 Freiburg im Breisgau}
+  \location{Baden-W\"urttemberg, GERMANY}
+%   \homepage{about.me/angellandros}
+%   \orcid{orcid.org/0000-0001-7088-417X}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Research Assistant / HiWi}{Albert-Ludwigs-Universit\"at Freiburg, \href{http://proglang.informatik.uni-freiburg.de/}{Programming Languages Lab}}{Feb 2017 --}{Freiburg im Breisgau, Germany}
+
+\begin{itemize}
+\item I use \cvtag{Coq} proving properties of specific programming languages.
+\end{itemize}
+
+\divider
+
+\cvevent{Backend Developer}{\href{https://en.wikipedia.org/wiki/Cafe\_Bazaar}{CafeBazaar} (Officially: \^Av\^ay e Hamr\^ah e Hu\v{s}mand e Hez\^ardast\^an)}{Aug 2015 -- Sept 2016}{Tehran, Iran}
+\begin{itemize}
+\item \textbf{Search team}: I had initiated the keyword extraction and autocomplete modules using Elastic, Dockerized project, and installed GitLab-CI module.
+\item \textbf{Divar team}: Worked on SEO of Divar.ir, 15th national rank in Alexa then (now 11th), study, develop, deploy.
+\item \textbf{HR team}: As a developer and technical consultant, I was in charge of developing tools for HR needs, negotiating with ATS companies, and managing Hackathon events, Techtalks, and teaching classes.
+\end{itemize}
+
+\cvtag{Python} \cvtag{Django} \cvtag{NGINX} \cvtag{PostgreSQL} \cvtag{Docker} \cvtag{Git} \cvtag{GitLab-CI} \cvtag{Elastic} \cvtag{Redis} \cvtag{Memcached} \cvtag{SEO} \cvtag{JS}
+
+\divider
+
+\cvevent{Research Colleague / Java Developer / Big Data Analyst}{Mobin IT Research Center}{Sept 2013 -- Sept 2015}{Tehran, Iran}
+\begin{itemize}
+\item I had to study various big data tools, such as Spark and Storm, and then to come with a solution for our periodical batch/streaming processes. Then I had to develop and maintain the distributing platform, and integrate the rest of the project with it, as my main responsibility in the two years.
+\item I also had to export the project, deploy and test them on 4 to 12 servers, monitor them, and enhance their efficiency.
+\end{itemize}
+
+\cvtag{Java} \cvtag{Storm} \cvtag{Hadoop} \cvtag{Solr} \cvtag{ZooKeeper} \cvtag{JMX} \cvtag{Servlet} \cvtag{Kestrel} \cvtag{Tomcat} \cvtag{PostgreSQL} \cvtag{JDBC} \cvtag{SVN} \cvtag{Jira}
+
+\divider
+
+\cvevent{Software Designer and Developer / Cooperator}{Idea Creation House (Cafco)}{Sept 2012 -- Sept 2015}{Tehran, Iran}
+
+\begin{itemize}
+\item Design and develop software for operating occasional public events or student competitions conducting by the company, I had to deliver updates and/or new applications to the events, and manage the unexpected difficulties remotely.
+\item Projects included: Competition Management System Web Admin and Web Client (Dynamic AJAX-based) and Android Client, MathCourse Gamified Mathematics Teaching System (with Quiz System, Idea-Sharing System, XP, Badge, etc.), Stock Exchange Simulator.
+\end{itemize}
+
+\cvtag{Android} \cvtag{PHP} \cvtag{MySQL} \cvtag{JS} \cvtag{jQuery} \cvtag{HTML} \cvtag{CSS}
+
+% \divider
+
+% \cvevent{Freelance Game Developer}{as A\v{z}i Dah\={a}ka Game Studio / Chatrang Games Studio}{Oct 2004 -- Oct 2013}{Tehran, Iran}
+
+% \cvtag{C} \cvtag{C++} \cvtag{Irrlicht} \cvtag{Unity3D} \cvtag{C\#} \cvtag{JS} \cvtag{3DS} \cvtag{CryENGINE 3} \cvtag{GML} \cvtag{Cube} \cvtag{Sauerbraten} \cvtag{MilkShape3D} \cvtag{Bryce} \cvtag{UDK}
+
+\clearpage
+
+\cvsection[page2sidebar]{Freelance}
+
+\cvevent{Freelance Game Developer}{as A\v{z}i Dah\={a}ka Game Studio / Chatrang Games Studio}{Oct 2004 -- Oct 2013}{Tehran, Iran}
+
+\cvtag{C} \cvtag{C++} \cvtag{Irrlicht} \cvtag{Unity3D} \cvtag{C\#} \cvtag{JS} \cvtag{3DS} \cvtag{CryENGINE 3} \cvtag{GML} \cvtag{Cube} \cvtag{Sauerbraten} \cvtag{MilkShape3D} \cvtag{Bryce} \cvtag{UDK}
+
+\cvsection{Extracurricular and Volunteer}
+
+\begin{itemize}
+\item 2015--Present \sep \textbf{Journal Reviewer} \sep Journal of Soft Computing and Information Technology
+\item 2009--2013 \sep \textbf{Teacher of Computer Programming} \sep NODET (National Organization for Development of Exceptional Talents)
+\item 2012 \sep \textbf{Invited Speaker} \sep Tehran Math House
+\item 2012 \sep \textbf{Editor-in-Chief} \sep Faculty Journal of Mathematics Department \sep Shahid Beheshti University
+\item 2011 \sep \textbf{Photographer and Movie Editor} \sep Tehran Math House
+\item 2011 \sep \textbf{Teacher's Assistant} \sep Shahid Beheshti University
+\item 2008--2010 \sep \textbf{Editor-in-Chief} \sep Sampdia Magazine
+\item 2009 \sep \textbf{Teacher of Informatics Olympiad} \sep Shahid Soltani Middle School (NODET)
+\end{itemize}
+
+\medskip
+
+\cvsection{Selected Projects}
+
+% \cvevent{Persian-German and Persian-English Translator}{Center for Development in Science and Technology}{2014--2016}{}
+% \begin{itemize}
+% \item While studying Cathegorial Grammars and Lambek Calculus, I had to design and develop a model for translation between languages.
+% \end{itemize}
+% \cvtag{\LaTeX} \cvtag{Java} \cvtag{BabelNet} \cvtag{Information Retrieval}
+
+% \divider
+
+\cvevent{Persian WordNet Infrastructure and WordTree Visualizer}{Mobin IT Research Center}{2014}{}
+\begin{itemize}
+\item I had to design an infrastructure for the so-called Persian WordNet Project, and then create a visualizer for interacting with word trees in a web page. Also developed a verb extractor and a phrase translator.
+\end{itemize}
+\cvtag{Java} \cvtag{Scala} \cvtag{PHP} \cvtag{Jena} \cvtag{HTML}  \cvtag{JS} \cvtag{jQuery} \cvtag{jsPlumb}
+
+\divider
+
+\cvevent{Persian Verb Creator}{Sharif University of Technology and Persian Academy}{2013}{}
+
+% \cvsection{A Typical Day (at the Last Job)}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{%
+%   6/8em/accent!30/{Sleep,\\beautiful sleep}, 
+%   3/8em/accent!40/Hopeful novelist by night,
+%   8/8em/accent!60/Daytime job,
+%   2/10em/accent/Sports and relaxation,
+%   5/6em/accent!20/Spending time with family
+% }
+
+\cvsection{Selected Publications}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Research Reports}},type=misc]
+
+% \divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+
+\end{document}
